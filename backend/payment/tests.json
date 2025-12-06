@@ -1,0 +1,15 @@
+{
+  "tests": [
+    {
+      "name": "Create payment requires all fields",
+      "method": "POST",
+      "path": "/?action=create",
+      "body": {},
+      "expectedStatus": 400,
+      "expectedBody": {
+        "error": "string"
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}

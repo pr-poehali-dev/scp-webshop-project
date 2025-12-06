@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Admin endpoints require authentication",
+      "method": "GET",
+      "path": "/?action=stats",
+      "expectedStatus": 401,
+      "expectedBody": {
+        "error": "string"
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}

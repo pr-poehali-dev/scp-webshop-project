@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Verify token endpoint returns 401 without token",
+      "method": "GET",
+      "path": "/?action=verify",
+      "expectedStatus": 401,
+      "expectedBody": {
+        "error": "string"
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}
